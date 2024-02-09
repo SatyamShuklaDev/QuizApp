@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Quiz App</title>
+  <link href="./styles.css" rel="stylesheet" type="text/css" />
+  <script src="./data/<%= query %>.js"></script>
+</head>
+<body style="background-color: #f0f2f5;">
+  <div class="container" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <h1 class="quiz-title" style="color: #b04bd8;">Quiz Title</h1>
+    <p class="correct-count hide" style="color: #333;">Correct:</p>
+    <p class="question hide" style="color: #333;">Question</p>
+    <div class="q-container hide">
+      <div class="btn-grid">
+        <div style="background-color: #bd7f3a;">Q1</div>
+        <div style="background-color: #c79539;">Q2</div>
+        <div style="background-color: #cedf3a;">Q3</div>
+        <div style="background-color: #a57c31;">Q4</div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button class="start-btn" style="background-color: #1877f2; color: #fff; border: none; border-radius: 4px; padding: 10px; cursor: pointer;">Start</button>
+      <button class="next-btn hide" style="background-color: #1877f2; color: #fff; border: none; border-radius: 4px; padding: 10px; cursor: pointer;">Next</button>
+    </div>
+  </div>
+  <script src="./quizRenderer.js"></script>
+</body>
+</html>
